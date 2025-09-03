@@ -1,27 +1,21 @@
+import NumericButton from "./components/NumericButton"
+import './Index.css'
 function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="flex flex-row justify-center items-center">
+      <NumericButton valor={0} />
+      <NumericButton valor={1} />
+      <NumericButton valor={2} />
+      <NumericButton valor={3} />
+      <NumericButton valor={4} />
+      <NumericButton valor={5} />
+      <NumericButton valor={6} />
+      <NumericButton valor={7} />
+      <NumericButton valor={8} />
+      <NumericButton valor={9} />
+    </div>
     </>
   )
 }
