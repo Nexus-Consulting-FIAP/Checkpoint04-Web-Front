@@ -1,12 +1,11 @@
-function NumericButton({ valor }) {
+function NumericButton({ valor, cor_botao, cor_texto }) {
+    cor_botao += " drop-shadow-lg cursor-pointer rounded-full w-15 h-15 p-3 place-items-center"
     return (
-
         <>
-            <div className="cursor-pointer bg-amber-900 rounded-4xl text-center w-10 p-3 drop-shadow-sm"> 
-                <h1 className="text-white">{valor}</h1>
+            <div className={cor_botao}> 
+                <h1 className={cor_texto}>{valor}</h1>
             </div>
         </>
-
     )
 }
 export default NumericButton
