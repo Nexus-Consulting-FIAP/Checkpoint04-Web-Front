@@ -41,7 +41,7 @@ default profile
 > Nenhum dos comandos realizados no terminal irá funcionar se o terminal não for em Bash
 
 ## Instalação de Vite/React, Tailwind e outras dependencias
-- Implementação do vite+ React
+- Implementação do Vite+ React
 ```
 npm create vite@latest
 npm install
@@ -55,15 +55,20 @@ npm install tailwindcss @tailwindcss/vite
 ```
 - Completando a implementação de tailwind[^1]
   - No arquivo `vite.config.js`, o arquivo precisa ficar como :
-    ```
+    ```js
     import { defineConfig } from 'vite'
+    import react from '@vitejs/plugin-react'
     import tailwindcss from '@tailwindcss/vite'
     
+    // https://vite.dev/config/
     export default defineConfig({
       plugins: [
         react(),
         tailwindcss(),
       ],
+      server: {
+        allowedHosts: true
+      }
     })
     ```
   
