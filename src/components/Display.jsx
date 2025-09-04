@@ -1,16 +1,12 @@
 import { useState } from 'react';
 
-function Display() {
-    const [valor, setValor]             = useState(0)
-    const [oldValor, setOldValor]       = useState(0)
-    const [oldOperacao, setOldOperacao] = useState('+')
+function Display({conta, resultado}) {
     return (
         <>
             <div>
-                <div className="h-4"/>
-                <p className="text-gray-600 text-center">{oldOperacao} {oldValor}</p>
+                <p className="text-gray-600 text-center">{resultado}</p>
                 
-                <p className="text-8xl">{valor}</p>
+                <p className="text-8xl">{conta}</p>
             </div>
         </>
     )
