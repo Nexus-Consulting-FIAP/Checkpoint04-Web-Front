@@ -1,8 +1,8 @@
 function NumericButton({ valor, cor_botao, cor_texto }) {
-    cor_botao += " drop-shadow-lg cursor-pointer rounded-full w-15 h-15 p-3 place-items-center"
+    cor_botao += " drop-shadow-lg cursor-pointer rounded-full w-15 h-15 p-3 place-items-center hover:bg-purple-600"
     return (
         <>
-            <div className={cor_botao}> 
+            <div className={cor_botao}>
                 <h1 className={cor_texto}>{valor}</h1>
             </div>
         </>
