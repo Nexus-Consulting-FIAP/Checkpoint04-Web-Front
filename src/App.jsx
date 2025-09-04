@@ -30,7 +30,7 @@ function App() {
           <NumericButton valor={2} cor_botao={numbers_color.background} cor_texto={numbers_color.font} />
           <NumericButton valor={3} cor_botao={numbers_color.background} cor_texto={numbers_color.font} />
           <NumericButton valor={"+"} cor_botao={operations_color.background} cor_texto={operations_color.font} />
-          <NumericButton valor={"xD"} cor_botao={operations_color.background} cor_texto={operations_color.font} />
+          <NumericButton valor={"x²"} cor_botao={operations_color.background} cor_texto={operations_color.font} />
           <NumericButton valor={0} cor_botao={numbers_color.background} cor_texto={numbers_color.font} />
           <NumericButton valor={"."} cor_botao={operations_color.background} cor_texto={operations_color.font} />
           <NumericButton valor={"="} cor_botao={"bg-black"} cor_texto={"text-white"} />
