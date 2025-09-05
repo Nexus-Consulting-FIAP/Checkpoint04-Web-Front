@@ -1,4 +1,4 @@
-# Protótipo do site Passa Pra Elas :soccer:	
+# Calculadora - Checkpoint 04	
 
 ## Esse protótipo foi desenvolvido pelo grupo Nexus, Formados por:
 
